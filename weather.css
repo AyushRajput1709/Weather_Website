@@ -1,0 +1,205 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://images.theconversation.com/files/232705/original/file-20180820-30593-1nxanpj.jpg?ixlib=rb-4.1.0&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+form {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+input[type="text"], button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+input[type="text"] {
+  border: 1px solid #2980b9;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+.weather-info {
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-align: left;
+  width: 100%;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info p {
+  margin: 10px 0;
+}
+
+.weather-info strong {
+  font-weight: bold;
+}
+
+/* Custom Styles */
+.weather-widget {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-widget .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weather-widget .search input {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.weather-widget .search input::placeholder {
+  color: white;
+}
+
+.weather-widget .location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weather-widget .location .city {
+  font-size: 1.2em;
+}
+
+.weather-widget .location .date {
+  font-size: 0.9em;
+}
+
+.weather-widget .current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weather-widget .current-weather .icon {
+  font-size: 3em;
+}
+
+.weather-widget .current-weather .temp {
+  font-size: 2.5em;
+}
+
+.weather-widget .current-weather .description {
+  font-size: 1.2em;
+}
+
+.weather-widget .details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.weather-widget .details .humidity,
+.weather-widget .details .wind {
+  display: flex;
+  align-items: center;
+}
+
+.weather-widget .details .humidity::before,
+.weather-widget .details .wind::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.weather-widget .details .humidity::before {
+  background: url('https://example.com/path/to/humidity-icon.png') no-repeat center center;
+  background-size: contain;
+}
+
+.weather-widget .details .wind::before {
+  background: url('https://example.com/path/to/wind-icon.png') no-repeat center center;
+  background-size: contain;
+}
+
+.weather-widget .forecast {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-widget .forecast .day {
+  text-align: center;
+}
+
+.weather-widget .forecast .day .date {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.weather-widget .forecast .day .icon {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.weather-widget .forecast .day .temp {
+  font-size: 1.2em;
+}
+
+
+
